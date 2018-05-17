@@ -1,4 +1,4 @@
-package com.dzone.albanoj2.example.rest;
+package com.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

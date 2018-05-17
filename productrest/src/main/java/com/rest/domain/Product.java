@@ -1,4 +1,4 @@
-package com.dzone.albanoj2.example.rest.domain;
+package com.rest.domain;
 
 public class Product implements Identifiable {
 

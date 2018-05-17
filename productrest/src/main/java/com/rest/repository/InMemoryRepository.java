@@ -1,4 +1,4 @@
-package com.dzone.albanoj2.example.rest.repository;
+package com.rest.repository;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,7 +7,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.dzone.albanoj2.example.rest.domain.Identifiable;
+import com.rest.domain.Identifiable;
 
 
 public abstract class InMemoryRepository<T extends Identifiable> {

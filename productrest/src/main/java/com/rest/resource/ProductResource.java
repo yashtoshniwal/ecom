@@ -1,9 +1,9 @@
-package com.dzone.albanoj2.example.rest.resource;
+package com.rest.resource;
 
 import org.springframework.hateoas.ResourceSupport;
 
-import com.dzone.albanoj2.example.rest.domain.Product;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.rest.domain.Product;
 
 public class ProductResource extends ResourceSupport {
 

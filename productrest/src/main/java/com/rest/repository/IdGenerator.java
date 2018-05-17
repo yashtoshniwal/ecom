@@ -1,4 +1,4 @@
-package com.dzone.albanoj2.example.rest.repository;
+package com.rest.repository;
 
 import java.util.concurrent.atomic.AtomicLong;
 

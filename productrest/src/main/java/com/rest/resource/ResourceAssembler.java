@@ -1,4 +1,4 @@
-package com.dzone.albanoj2.example.rest.resource;
+package com.rest.resource;
 
 import java.util.Collection;
 import java.util.stream.Collectors;

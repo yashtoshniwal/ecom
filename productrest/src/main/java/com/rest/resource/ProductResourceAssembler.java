@@ -1,11 +1,11 @@
-package com.dzone.albanoj2.example.rest.resource;
+package com.rest.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityLinks;
 import org.springframework.hateoas.Link;
 import org.springframework.stereotype.Component;
 
-import com.dzone.albanoj2.example.rest.domain.Product;
+import com.rest.domain.Product;
 
 @Component
 public class ProductResourceAssembler extends ResourceAssembler<Product, ProductResource> {

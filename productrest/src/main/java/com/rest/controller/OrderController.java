@@ -1,4 +1,4 @@
-package com.dzone.albanoj2.example.rest.controller;
+package com.rest.controller;
 
 import java.util.Collection;
 import java.util.List;
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dzone.albanoj2.example.rest.domain.Product;
-import com.dzone.albanoj2.example.rest.repository.ProductRepository;
-import com.dzone.albanoj2.example.rest.resource.ProductResource;
-import com.dzone.albanoj2.example.rest.resource.ProductResourceAssembler;
+import com.rest.domain.Product;
+import com.rest.repository.ProductRepository;
+import com.rest.resource.ProductResource;
+import com.rest.resource.ProductResourceAssembler;
 
 @CrossOrigin(origins = "*")
 @RestController

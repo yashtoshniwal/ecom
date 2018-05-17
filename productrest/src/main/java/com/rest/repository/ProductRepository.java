@@ -1,8 +1,8 @@
-package com.dzone.albanoj2.example.rest.repository;
+package com.rest.repository;
 
 import org.springframework.stereotype.Repository;
 
-import com.dzone.albanoj2.example.rest.domain.Product;
+import com.rest.domain.Product;
 
 @Repository
 public class ProductRepository extends InMemoryRepository<Product> {
