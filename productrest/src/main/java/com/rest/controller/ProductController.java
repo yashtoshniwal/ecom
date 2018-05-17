@@ -23,8 +23,8 @@ import com.rest.resource.ProductResourceAssembler;
 @CrossOrigin(origins = "*")
 @RestController
 @ExposesResourceFor(Product.class)
-@RequestMapping(value = "/product", produces = "application/json")
-public class OrderController {
+@RequestMapping(value = "/products", produces = "application/json")
+public class ProductController {
 	
 	@Autowired
 	private ProductRepository repository;
