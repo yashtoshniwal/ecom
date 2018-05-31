@@ -15,32 +15,32 @@ public abstract class InMemoryRepository<T extends Identifiable> {
 	@Autowired
 	private IdGenerator idGenerator;
 	
-	private List<T> elements = Collections.synchronizedList(new ArrayList<>());
+	private List<T> products = Collections.synchronizedList(new ArrayList<>());
 
-	public T create(T element) {
-		elements.add(element);
-		element.setId(idGenerator.getNextId());
-		return element;
+	public T create(T product) {
+		products.add(product);
+		product.setId(idGenerator.getNextId());
+		return product;
 	}
 
 	public boolean delete(Long id) {
-		return elements.removeIf(element -> element.getId().equals(id));
+		return products.removeIf(product -> product.getId().equals(id));
 	}
 
 	public List<T> findAll() {
-		return elements;
+		return products;
 	}
 
 	public Optional<T> findById(Long id) {
-		return elements.stream().filter(e -> e.getId().equals(id)).findFirst();
+		return products.stream().filter(e -> e.getId().equals(id)).findFirst();
 	}
 
 	public int getCount() {
-		return elements.size();
+		return products.size();
 	}
 
 	public void clear() {
-		elements.clear();
+		products.clear();
 	}
 
 	public boolean update(Long id, T updated) {
@@ -49,9 +49,9 @@ public abstract class InMemoryRepository<T extends Identifiable> {
 			return false;
 		}
 		else {
-			Optional<T> element = findById(id);
-			element.ifPresent(original -> updateIfExists(original, updated));
-			return element.isPresent();
+			Optional<T> product = findById(id);
+			product.ifPresent(original -> updateIfExists(original, updated));
+			return product.isPresent();
 		}
 	}
 	
