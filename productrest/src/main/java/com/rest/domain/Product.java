@@ -4,6 +4,7 @@ public class Product implements Identifiable {
 
 	private Long id;
 	private String name;
+	private String category;
 	private String description;
 	private int buy_price;
 	private int sell_price;
@@ -25,6 +26,14 @@ public class Product implements Identifiable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 	public String getDescription() {

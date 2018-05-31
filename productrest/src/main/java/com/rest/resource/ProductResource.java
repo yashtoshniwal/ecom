@@ -8,6 +8,8 @@ import com.rest.domain.Product;
 public class ProductResource extends ResourceSupport {
 
 	private final long id;
+	private final String name;
+	private final String category;
 	private final String description;
 	private final int buy_price;
 	private final int sell_price;
@@ -15,6 +17,8 @@ public class ProductResource extends ResourceSupport {
 	
 	public ProductResource(Product product) {
 		id = product.getId();
+		name = product.getName();
+		category = product.getCategory();
 		description = product.getDescription();
 		buy_price = product.getBuy_price();
 		sell_price = product.getSell_price();
@@ -26,6 +30,14 @@ public class ProductResource extends ResourceSupport {
 		return id;
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
 	public String getDescription() {
 		return description;
 	}

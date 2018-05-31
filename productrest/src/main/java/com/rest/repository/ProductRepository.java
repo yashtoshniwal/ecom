@@ -8,6 +8,8 @@ import com.rest.domain.Product;
 public class ProductRepository extends InMemoryRepository<Product> {
 
 	protected void updateIfExists(Product original, Product updated) {
+		original.setName(updated.getName());
+		original.setCategory(updated.getCategory());
 		original.setDescription(updated.getDescription());
 		original.setBuy_price(updated.getBuy_price());
 		original.setSell_price(updated.getSell_price());
