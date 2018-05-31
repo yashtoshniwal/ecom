@@ -1,0 +1,10 @@
+com\rest\controller\ProductController.class
+com\rest\repository\IdGenerator.class
+com\rest\domain\Product.class
+com\rest\repository\ProductRepository.class
+com\rest\resource\ProductResourceAssembler.class
+com\rest\Application.class
+com\rest\domain\Identifiable.class
+com\rest\resource\ProductResource.class
+com\rest\resource\ResourceAssembler.class
+com\rest\repository\InMemoryRepository.class
